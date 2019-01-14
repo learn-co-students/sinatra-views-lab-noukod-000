@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Display date</title>
+</head>
+  <body>
+    <h1>Today</h1>
+    <% day = Date.today.strftime("%A") %>
+    <% month_day = Date.today.strftime("%B %d") %>
+    <% year = Date.today.strftime("%Y") %>
+    <%= "The date is #{day}, #{month_day}, #{year}" %>
+  </body>
+</html>
